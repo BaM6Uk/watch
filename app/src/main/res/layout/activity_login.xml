@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login"
+    android:background="@drawable/bg"
+    android:backgroundTint="#858F7F00"
+    android:backgroundTintMode="src_atop">
+
+    <TextView
+        android:id="@+id/smarthousetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Smart House"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/edit_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="7"
+        android:hint="E-mail"
+        android:layout_below="@id/smarthousetext"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="7"
+        android:hint="Password"
+        android:layout_below="@id/edit_mail"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"
+        android:backgroundTint="@color/white"/>
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your House"
+        android:textSize="10dp"
+        android:textAllCaps="false"
+        android:layout_below="@id/edit_password"
+        android:layout_centerHorizontal="true"
+        android:layout_alignStart="@id/edit_password"
+        android:layout_alignEnd="@id/edit_password"
+        android:backgroundTint="@color/cyan"/>
+</RelativeLayout>

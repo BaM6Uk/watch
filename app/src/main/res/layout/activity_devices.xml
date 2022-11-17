@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".rooms"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/roomstext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Devices"
+        android:textStyle="bold"
+        android:textColor="@color/cyan"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageButton
+        android:id="@+id/livingroom"
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/light"
+        android:layout_below="@id/roomstext"
+        android:backgroundTint="#00FFFFFF"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/livingroomtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Light"
+        android:layout_alignTop="@id/livingroom"
+        android:layout_alignStart="@id/livingroom"
+        android:layout_alignEnd="@id/livingroom"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="55dp"/>
+
+    <ImageButton
+        android:id="@+id/livingroom1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/light"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="#00FFFFFF"
+        android:layout_below="@id/roomstext"
+        android:layout_marginEnd="20dp"
+        />
+
+    <TextView
+        android:id="@+id/livingroomtext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Light"
+        android:layout_alignTop="@id/livingroom1"
+        android:layout_alignStart="@id/livingroom1"
+        android:layout_alignEnd="@id/livingroom1"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginTop="55dp"/>
+
+    <ImageButton
+        android:id="@+id/therm"
+        android:layout_width="30dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        app:cornerRadius="20dp"
+        android:layout_alignParentStart="true"
+        android:text="Thermostat"
+        android:textSize="10dp"
+        android:src="@drawable/therm"
+        android:backgroundTint="@color/cyan"
+        android:layout_below="@id/livingroom"
+        android:layout_alignEnd="@id/livingroom"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/thermtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thermo"
+        android:layout_alignTop="@id/therm"
+        android:layout_alignStart="@id/therm"
+        android:layout_alignEnd="@id/therm"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginTop="55dp"/>
+
+
+</RelativeLayout>
